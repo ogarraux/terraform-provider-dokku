@@ -58,6 +58,8 @@ func Provider() *schema.Provider {
 			"dokku_memcached_service_link":  resourceMemcachedServiceLink(),
 			"dokku_rabbitmq_service":        resourceRabbitmqService(),
 			"dokku_rabbitmq_service_link":   resourceRabbitmqServiceLink(),
+			"dokku_mongo_service":           resourceMongoService(),
+			"dokku_mongo_service_link":      resourceMongoServiceLink(),
 		},
 		DataSourcesMap:       map[string]*schema.Resource{},
 		ConfigureContextFunc: providerConfigure,
